@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyProyecto</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="iniciarSesion">INICIAR SESION</string>
+    <string name="identification">Documento</string>
+    <string name="name">Nombre</string>
+    <string name="register">Registrarse</string>
+    <string name="singUp">Registrese</string>
+    <string name="btn_edit_user">Editar</string>
+    <string name="btn_delete_user">Eliminar</string>
+    <string name="btn_buy">Comprar</string>
+    <string name="registerProduct">Registrar Producto</string>
+    <string name="author">Autor</string>
+    <string name="nombreProducto">Nombre Producto</string>
+    <string name="category">Categoria</string>
+    <string name="stock">Stock</string>
+    <string name="value">Valor</string>
+</resources>

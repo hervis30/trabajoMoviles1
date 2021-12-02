@@ -39,13 +39,15 @@ public class ProfileActivity extends AppCompatActivity {
             profileBinding.etIdentification.setText(
                     String.valueOf(user.getIdentification()));
             profileBinding.etPassword.setText(user.getPassword());
+            profileBinding.etRol.setText(user.getRol());
             //Log.d("cesdeshop: ",cursor.getString(indexRow));
         }
     public void updateUser(View view){
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         String name = profileBinding.etName.getText().toString();
         String email = profileBinding.etEmail.getText().toString();
-        String sql = String.format("UPDATE users set name='%s',email='%s' WHERE id='%s'",name,email,idUser);
+        String rol = profileBinding.etRol.getText().toString();
+        String sql = String.format("UPDATE users set name='%s',email='%s',rol='%s', WHERE id='%s'",name,email,rol,idUser);
         db.execSQL(sql);
         Intent intent = new Intent(this,ListUsersActivity.class);
         startActivity(intent);

@@ -40,11 +40,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(this,"Login",Toast.LENGTH_SHORT).show();
 
 
+
                 break;
 
             case R.id.btnSingUp:
 
-                Intent intent = new Intent(this, RegisterProductsActivity.class);
+                Intent intent = new Intent(this,ListUsersActivity.class);
                 startActivity(intent);
                 break;
 

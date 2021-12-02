@@ -29,6 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_123_24"
                     android:text="@string/identification"
                     android:textSize="16sp" />
 
@@ -37,6 +38,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
                     android:text="@string/name"
                     android:textSize="16sp" />
 
@@ -45,7 +47,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
                     android:text="@string/email"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvRol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_verified_user_24"
+                    android:text="@string/rol"
                     android:textSize="16sp" />
 
                 <LinearLayout

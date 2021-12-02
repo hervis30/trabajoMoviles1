@@ -42,6 +42,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
     holder.itemBinding.tvIdentification
             .setText(String.valueOf(user.getIdentification()));
     holder.itemBinding.tvEmail.setText(user.getEmail());
+    holder.itemBinding.tvRol.setText(user.getRol());
     holder.itemBinding.btnDeleteUser.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {

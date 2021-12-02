@@ -38,6 +38,8 @@ public class UserProductAdapter extends RecyclerView.Adapter<UserProductAdapter.
         holder.itemBinding.tvCategory.setText(userProduct.getCategory());
         holder.itemBinding.tvAuthor.setText(userProduct.getAuthor());
         holder.itemBinding.tvValue.setText(String.valueOf(userProduct.getValue()));
+        holder.itemBinding.tvStoreName.setText(String.valueOf(userProduct.getStoreName()));
+        holder.itemBinding.tvStoreEmail.setText(String.valueOf(userProduct.getEmailStore()));
     }
 
     @Override

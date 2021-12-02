@@ -48,10 +48,13 @@ private ActivityListUsersBinding listUsersBinding;
                 int indexNameRow =cursor.getColumnIndex("name");
                 int indexIdentificationRow =cursor.getColumnIndex("identification");
                 int indexPasswordRow =cursor.getColumnIndex("password");
+                int indexRolRow =cursor.getColumnIndex("rol");
+
                 String name =  cursor.getString(indexNameRow).toString();
                 String email =  cursor.getString(indexEmailRow).toString();
                 long identification = Long.parseLong(cursor.getString(indexIdentificationRow));
                 String password =  cursor.getString(indexPasswordRow).toString();
+                String rol = cursor.getString(indexRolRow).toString();
                 //Log.d("Nombre", name);
                 UserEntity userEntity=new UserEntity();
                 userEntity.setId(idUser);
@@ -59,6 +62,7 @@ private ActivityListUsersBinding listUsersBinding;
                 userEntity.setEmail(email);
                 userEntity.setIdentification(identification);
                 userEntity.setPassword(password);
+                userEntity.setRol(rol);
                 usersArrayList.add(userEntity);
             }
             userAdapter.notifyDataSetChanged();

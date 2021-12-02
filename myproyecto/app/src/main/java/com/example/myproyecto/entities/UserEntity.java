@@ -7,6 +7,16 @@ public class UserEntity implements Serializable {
     private String name;
     private String email;
     private String password;
+    private String rol;
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+
     private long identification;
 
     public int getId() {

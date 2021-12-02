@@ -9,6 +9,24 @@ public class ProductEntity implements Serializable {
     private String category;
     private String author;
     private int value;
+    private String storeName;
+    private String emailStore;
+
+    public String getStoreName() {
+        return storeName;
+    }
+
+    public void setStoreName(String storeName) {
+        this.storeName = storeName;
+    }
+
+    public String getEmailStore() {
+        return emailStore;
+    }
+
+    public void setEmailStore(String emailStore) {
+        this.emailStore = emailStore;
+    }
 
     public int getId() {
         return id;

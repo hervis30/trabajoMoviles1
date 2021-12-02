@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp">
@@ -31,6 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_menu_book_24"
                     android:text="@string/nombreProducto"
                     android:textSize="16sp" />
 
@@ -39,6 +41,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_content_paste_search_24"
                     android:text="@string/stock"
                     android:textSize="16sp" />
 
@@ -47,6 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_category_24"
                     android:text="@string/category"
                     android:textSize="16sp" />
 
@@ -55,6 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
                     android:text="@string/author"
                     android:textSize="16sp" />
 
@@ -63,8 +68,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
                     android:text="@string/value"
                     android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvStoreName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_house_24"
+                    android:text="@string/storeName" />
+
+                <TextView
+                    android:id="@+id/tvStoreEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    tools:text="@string/storeEmail" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

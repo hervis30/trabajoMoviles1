@@ -49,11 +49,15 @@ public class ListProductActivity extends AppCompatActivity {
                 int indexCategoryRow=cursor.getColumnIndex("category");
                 int indexAuthorRow=cursor.getColumnIndex("author");
                 int indexValueRow=cursor.getColumnIndex("value");
+                int indexStoreNameRow=cursor.getColumnIndex("storeName");
+                int indexEmailStoreRow=cursor.getColumnIndex("emailStore");
                 String productName= cursor.getString(indexProductNameRow).toString();
                 int stock=Integer.parseInt(cursor.getString(indexStockRow)) ;
                 String category= cursor.getString(indexCategoryRow).toString();
                 String author= cursor.getString(indexAuthorRow).toString();
                 int value=Integer.parseInt(cursor.getString(indexValueRow)) ;
+                String storeName=cursor.getString(indexStoreNameRow).toString();
+                String emailStore=cursor.getString(indexEmailStoreRow).toString();
                 //Log.d("Author",author);
                 ProductEntity productEntity=new ProductEntity();
                 productEntity.setId(idProduct);
@@ -62,6 +66,8 @@ public class ListProductActivity extends AppCompatActivity {
                 productEntity.setCategory(category);
                 productEntity.setAuthor(author);
                 productEntity.setValue(value);
+                productEntity.setStoreName(storeName);
+                productEntity.setEmailStore(emailStore);
                 productsArrayList.add(productEntity);
             }
             productAdapter.notifyDataSetChanged();

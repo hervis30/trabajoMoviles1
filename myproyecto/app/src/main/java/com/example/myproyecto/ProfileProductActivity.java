@@ -38,6 +38,9 @@ public class ProfileProductActivity extends AppCompatActivity {
             profileProductBinding.etCategory.setText(product.getCategory());
             profileProductBinding.etAuthor.setText(product.getAuthor());
             profileProductBinding.etValue.setText(String.valueOf(product.getValue()));
+            profileProductBinding.etStoreName.setText(product.getStoreName());
+            profileProductBinding.etEmailStore.setText(product.getEmailStore());
+
 
     }
     public void updateProduct(View view){
@@ -45,9 +48,11 @@ public class ProfileProductActivity extends AppCompatActivity {
         String productName = profileProductBinding.etProductName.getText().toString();
         String category = profileProductBinding.etCategory.getText().toString();
         String author = profileProductBinding.etAuthor.getText().toString();
+        String storeName=profileProductBinding.etStoreName.getText().toString();
+        String emailStore=profileProductBinding.etEmailStore.getText().toString();
         String sql = String.format(
-                "UPDATE products set productName='%s',category='%s',author='%s' WHERE id='%s'",
-                productName,category,author,idProduct);
+                "UPDATE products set productName='%s',category='%s',author='%s',storeName='%s',emailStore='%s' WHERE id='%s'",
+                productName,category,author,storeName,emailStore,idProduct);
         db.execSQL(sql);
         Intent intent = new Intent(this,ListProductActivity.class);
         startActivity(intent);

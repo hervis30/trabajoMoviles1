@@ -32,18 +32,22 @@ public class RegisterProductsActivity extends AppCompatActivity {
         String category = registerProductsBinding.etCategory.getText().toString();
         String author = registerProductsBinding.etAuthor.getText().toString();
         String value = registerProductsBinding.etValue.getText().toString();
+        String storeName=registerProductsBinding.etStoreName.getText().toString();
+        String storeEmail=registerProductsBinding.etStoreEmail.getText().toString();
         productData.put("productName", productName);
         productData.put("stock", stock);
         productData.put("category",category);
         productData.put("author",author);
         productData.put("value",value);
+        productData.put("storeName",storeName);
+        productData.put("emailStore",storeEmail);
         long newProduct = db.insert("products",null,productData);
         Toast.makeText(this, "" +newProduct, Toast.LENGTH_SHORT).show();
         //Intent intent = new Intent(this,ProfileProductActivity.class);
         //startActivity(intent);
     }
     public void goToListProducts(View view){
-        Intent intent = new Intent(this, ListUserProductActivity.class);
+        Intent intent = new Intent(this, ListProductActivity.class);
         startActivity(intent);
     }
 }

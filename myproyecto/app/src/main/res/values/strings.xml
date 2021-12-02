@@ -16,4 +16,7 @@
     <string name="category">Categoria</string>
     <string name="stock">Stock</string>
     <string name="value">Valor</string>
+    <string name="rol">Seleccione rol</string>
+    <string name="storeName">Nombre Libreria</string>
+    <string name="storeEmail">Email Libreria</string>
 </resources>

@@ -42,10 +42,9 @@ public class RegisterActivity extends AppCompatActivity {
         act_etRol.setThreshold(1);
         dbHelper = new DbHelper(this);
 
-
     }
-    public void registerUser(View view){
 
+    public void registerUser(View view){
 
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues userData = new ContentValues();
@@ -54,13 +53,17 @@ public class RegisterActivity extends AppCompatActivity {
         String email= registerBinding.etEmail.getText().toString();
         String identification = registerBinding.etIdentification.getText().toString();
         String password = registerBinding.etPassword.getText().toString();
-        userData.put("name", name);
-        userData.put("email", email);
-        userData.put("identification", identification);
-        userData.put("rol",rol);
-        userData.put("password", password);
-        long newUser = db.insert("users",null,userData);
-        Toast.makeText(this, ""+newUser, Toast.LENGTH_SHORT).show();
+        if(name.equals("")||rol.equals("")||email.equals("")||identification.equals("")||password.equals("")){
+            Toast.makeText(RegisterActivity.this,"Por favor llene todos los campos",Toast.LENGTH_SHORT).show();
+        }
+        else{  userData.put("name", name);
+            userData.put("email", email);
+            userData.put("identification", identification);
+            userData.put("rol",rol);
+            userData.put("password", password);
+            long newUser = db.insert("users",null,userData);
+            Toast.makeText(this, ""+newUser, Toast.LENGTH_SHORT).show();}
+
         //Intent intent=new Intent(this,ProfileActivity.class);
         //startActivity(intent);
     }

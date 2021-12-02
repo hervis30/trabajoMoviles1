@@ -34,15 +34,21 @@ public class RegisterProductsActivity extends AppCompatActivity {
         String value = registerProductsBinding.etValue.getText().toString();
         String storeName=registerProductsBinding.etStoreName.getText().toString();
         String storeEmail=registerProductsBinding.etStoreEmail.getText().toString();
-        productData.put("productName", productName);
-        productData.put("stock", stock);
-        productData.put("category",category);
-        productData.put("author",author);
-        productData.put("value",value);
-        productData.put("storeName",storeName);
-        productData.put("emailStore",storeEmail);
-        long newProduct = db.insert("products",null,productData);
-        Toast.makeText(this, "" +newProduct, Toast.LENGTH_SHORT).show();
+        if(productName.equals("")||stock.equals("")||category.equals("")||author.equals(
+                "")||value.equals("")||storeName.equals("")||storeEmail.equals("")){
+            Toast.makeText(RegisterProductsActivity.this,"Por favor llene todos los campos",Toast.LENGTH_SHORT).show();
+        }else{
+            productData.put("productName", productName);
+            productData.put("stock", stock);
+            productData.put("category",category);
+            productData.put("author",author);
+            productData.put("value",value);
+            productData.put("storeName",storeName);
+            productData.put("emailStore",storeEmail);
+            long newProduct = db.insert("products",null,productData);
+            Toast.makeText(this, "" +newProduct, Toast.LENGTH_SHORT).show();
+        }
+
         //Intent intent = new Intent(this,ProfileProductActivity.class);
         //startActivity(intent);
     }

@@ -42,29 +42,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
          if(email.equals("")||password.equals("")){
              Toast.makeText(this,"Por favor llene todos los campos",Toast.LENGTH_SHORT).show();
-
+                break;
          }else{
-             Boolean checkPassEmailRol=dbHelper.checkPassEmailRol(email,rol,password);
-             if(checkPassEmailRol==true){
-                 Toast.makeText(MainActivity.this,"Exito en el ingreso",Toast.LENGTH_SHORT).show();
-                 Intent intent=new Intent(getApplicationContext(),ListUserProductActivity.class);
+             if(email.equals("admin@cesde.net")&&password.equals("admin")){
+                 Toast.makeText(MainActivity.this,"ADMINISTRATOR",Toast.LENGTH_SHORT).show();
+                 Intent intent=new Intent(getApplicationContext(),AdminActivity.class);
                  startActivity(intent);
                  break;
              }else{
-                 Boolean checkEmailPass=dbHelper.checkEmailPass(email,password);
-                 if(checkEmailPass==true){
+                 Boolean checkPassEmailRol=dbHelper.checkPassEmailRol(email,rol,password);
+                 if(checkPassEmailRol==true){
                      Toast.makeText(MainActivity.this,"Exito en el ingreso",Toast.LENGTH_SHORT).show();
-                     Intent intent=new Intent(getApplicationContext(),RegisterProductsActivity.class);
+                     Intent intent=new Intent(getApplicationContext(),ListUserProductActivity.class);
                      startActivity(intent);
                      break;
-
                  }else{
-                     Toast.makeText(MainActivity.this,"Credenciales invalidas",Toast.LENGTH_SHORT).show();
-                     break;
+                     Boolean checkEmailPass=dbHelper.checkEmailPass(email,password);
+                     if(checkEmailPass==true){
+                         Toast.makeText(MainActivity.this,"Exito en el ingreso",Toast.LENGTH_SHORT).show();
+                         Intent intent=new Intent(getApplicationContext(),RegisterProductsActivity.class);
+                         startActivity(intent);
+                         break;
+                     }else{
+                         Toast.makeText(MainActivity.this,"Credenciales invalidas",Toast.LENGTH_SHORT).show();
+                         break;
+                     }
                  }
-             }
+            }
          }
-
             case R.id.btnSingUp:
 
                 Intent intent = new Intent(this,RegisterActivity.class);

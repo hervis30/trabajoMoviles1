@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyProyecto">
         <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuyScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListUserProductActivity"
             android:exported="false" />
         <activity

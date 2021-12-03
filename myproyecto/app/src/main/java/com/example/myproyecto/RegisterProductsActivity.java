@@ -47,6 +47,8 @@ public class RegisterProductsActivity extends AppCompatActivity {
             productData.put("emailStore",storeEmail);
             long newProduct = db.insert("products",null,productData);
             Toast.makeText(this, "" +newProduct, Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, ListProductActivity.class);
+            startActivity(intent);
         }
 
         //Intent intent = new Intent(this,ProfileProductActivity.class);

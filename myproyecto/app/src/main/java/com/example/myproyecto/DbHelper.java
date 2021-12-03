@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class DbHelper extends SQLiteOpenHelper {
-    public static final int DATABASE_VERSION = 14;
+    public static final int DATABASE_VERSION = 16;
     public static final String DATABASE_NAME = "cesdeshop";
     public DbHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -52,6 +52,17 @@ public class DbHelper extends SQLiteOpenHelper {
         if(cursor.getCount()>0){
             return true;
         }else{
+            return false;
+        }
+    }
+    public boolean checkEmail(String emailStore){
+        SQLiteDatabase sqLiteDatabase=this.getWritableDatabase();
+        Cursor cursor=sqLiteDatabase.rawQuery(
+                "SELECT*FROM products WHERE emailStore=?",
+                new String[]{emailStore});
+        if (cursor.getCount() > 0) {
+            return true;
+        }else  {
             return false;
         }
     }

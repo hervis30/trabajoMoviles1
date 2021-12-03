@@ -3,6 +3,7 @@ package com.example.myproyecto;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -29,6 +30,7 @@ public class ListUserProductActivity extends AppCompatActivity {
         setContentView(view);
         userProductArrayList=new ArrayList<>();
         dbHelper=new DbHelper(this);
+
         userProductAdapter= new UserProductAdapter(this,userProductArrayList);
         listUserProductBinding.rvListUserProdut.setHasFixedSize(true);
         listUserProductBinding.rvListUserProdut.setLayoutManager(new LinearLayoutManager(this));
@@ -72,5 +74,9 @@ public class ListUserProductActivity extends AppCompatActivity {
             }
             userProductAdapter.notifyDataSetChanged();
         }
+    }
+    public void goToBuy(View view){
+        Intent intent=new Intent(this,BuyScreenActivity.class);
+        startActivity(intent);
     }
 }

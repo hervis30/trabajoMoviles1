@@ -47,6 +47,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.itemBinding.tvValue.setText(String.valueOf(product.getValue()));
         holder.itemBinding.tvStoreName.setText(String.valueOf(product.getStoreName()));
         holder.itemBinding.tvStoreEmail.setText(String.valueOf(product.getEmailStore()));
+
         holder.itemBinding.btnDeleteProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

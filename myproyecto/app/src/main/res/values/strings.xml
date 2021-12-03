@@ -19,4 +19,6 @@
     <string name="rol">Seleccione rol</string>
     <string name="storeName">Nombre Libreria</string>
     <string name="storeEmail">Email Libreria</string>
+    <string name="UsersList">Ver Usuarios y Vendedores Registrados</string>
+    <string name="ProductList">Ver Productos Registrados</string>
 </resources>

@@ -9,11 +9,12 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/gradient_card"
+        app:cardBackgroundColor="@android:color/holo_orange_dark"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp">
 
@@ -99,6 +100,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
+                        android:onClick="goToBuy"
                         android:text="@string/btn_buy"
                         app:cornerRadius="20dp" />
                 </LinearLayout>

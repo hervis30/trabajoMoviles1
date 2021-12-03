@@ -4,19 +4,31 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-land/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-land/activity_register_products.xml" value="0.195703125" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw320dp-land/activity_register.xml" value="0.24557823129251702" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw320dp-land/activity_register_products.xml" value="0.1828125" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw320dp/activity_register.xml" value="0.2" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw320dp/activity_register_products.xml" value="0.22" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw480dp-land/activity_register.xml" value="0.9" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw480dp-land/activity_register_products.xml" value="0.5" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw480dp/activity_main.xml" value="0.41375" />
-        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw480dp/activity_register.xml" value="0.67" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw480dp/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw480dp/activity_register_products.xml" value="0.33" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw600dp-land/activity_register.xml" value="0.25" />
-        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw600dp/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw600dp-land/activity_register_products.xml" value="0.1828125" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.1203125" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw600dp/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout-sw600dp/activity_register_products.xml" value="0.25" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/activity_admin.xml" value="0.18" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/activity_buy_screen.xml" value="0.1" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/activity_list_product.xml" value="0.1" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/activity_list_user_product.xml" value="0.15" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/activity_profile.xml" value="0.17" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/activity_profile_product.xml" value="0.18" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/activity_register.xml" value="0.33" />
-        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/activity_register_products.xml" value="0.21" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/activity_register_products.xml" value="0.22" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/activity_splash_screen.xml" value="0.14" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/activity_splash_screen_buy.xml" value="0.16" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/product_item.xml" value="0.33" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/tv_entity.xml" value="0.141015625" />
         <entry key="..\:/Users/Hervis Jonathan/Desktop/vamosPues/myproyecto/app/src/main/res/layout/user_item.xml" value="0.18" />
